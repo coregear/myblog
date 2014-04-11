@@ -27,14 +27,17 @@ done
 + 测试场景：虚拟机 2*E5-2650 4G nginx+lua
 
 结果：
+
 ![](http://i.imgur.com/gDuupLU.png)
 
 + 测试场景：虚拟机 2*E5-2650 4G nginx 静态文件
 
 结果：
+
 ![](http://i.imgur.com/OiZqF0a.png)
 
 + 测试场景：虚拟机 2*E5-2650 4G nginx+PHP
 
 结果：
+
 ![](http://i.imgur.com/Jwun3bT.png)
