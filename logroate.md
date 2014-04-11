@@ -1,6 +1,8 @@
 参考：http://huoding.com/2013/04/21/246
 
+
 ```bash
+vi /etc/logrotate.d/nginx
 /data/logs/nginx/*.log {
     daily
     dateext
