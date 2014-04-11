@@ -1,3 +1,5 @@
+## 使用logrotate处理应用日志
+
 参考：http://huoding.com/2013/04/21/246
 
 
@@ -14,7 +16,6 @@ vi /etc/logrotate.d/nginx
     endscript
 }
 ```
-
 
 - **dateext**       Archive  old versions of log files adding a daily extension like YYYYMMDD instead of simply adding a number.
 
