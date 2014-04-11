@@ -10,7 +10,7 @@
 
 ### 安装：
 1. 下载PHP的XDebug扩展，网址：http://xdebug.org/
-1. 编译安装：
+2. 编译安装：
 ```bash
 wget http://xdebug.org/files/xdebug-2.2.3.tgz
 tar -xzf xdebug-2.2.3.tgz
@@ -20,7 +20,7 @@ cd xdebug-2.2.3
 make
 cp modules/xdebug.so /usr/local/php/lib/php/extensions/no-debug-zts-20090626/
 ```
-1. 修改php配置：
+3. 修改php配置：
 注意此处分为**zend_extension**和**zend_extension_ts**注意区分一下(注意你的php是不是thread safe版的)
 ```bash
 vi /usr/local/webserver/php/lib/php.ini
@@ -30,7 +30,7 @@ xdebug.trace_output_dir="/tmp/xdebug"
 xdebug.profiler_output_dir="/tmp/xdebug"
 xdebug.profiler_output_name="cachegrind.out"
 ```
-1. 添加目录权限，**重启apache**：
+4. 添加目录权限，**重启apache**：
 ```bash
 mkdir -p /tmp/xdebug
 chmod 777 /tmp/xdebug
@@ -39,7 +39,7 @@ chmod 777 /tmp/xdebug
 
 ### 分析：
 1. 从服务器的/tmp/xdebug路径下载生成的性能日志
-1. 打开WinCacheGrind分析
+2. 打开WinCacheGrind分析
 
 ### 实例：
 
